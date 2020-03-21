@@ -9,4 +9,8 @@ export class ApiService {
   private SERVER_URL = "http://localhost:3000";
 
   constructor(private httpClient: HttpClient) { }
+
+  public get(){  
+		return this.httpClient.get(this.SERVER_URL);  
+	} // invokes the get() method of HttpClient to send GET requests to the REST API server.
 }
