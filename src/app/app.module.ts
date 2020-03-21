@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 // step_01 add HttpClientModule to your project
 // now we can use HttpClient service in our Angular project to consume our REST API
 import { HttpClientModule } from '@angular/common/http';
+
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // step_05 import Material elements
@@ -20,7 +22,8 @@ import { MatToolbarModule,
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
