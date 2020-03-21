@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 // step_01 add HttpClientModule to your project
 // now we can use HttpClient service in our Angular project to consume our REST API
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
