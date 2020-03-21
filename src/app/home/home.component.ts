@@ -18,6 +18,6 @@ export class HomeComponent implements OnInit {
     this.apiService.get().subscribe((data: any[]) => { //calls the get() method of the service for fetching data from the JSON REST API server
 			console.log(data);
 			this.products = data;
-		})
+    })
   }
 }
